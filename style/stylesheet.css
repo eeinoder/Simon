@@ -1,0 +1,74 @@
+/* TODO:
+simplify/consolidate style classes
+*/
+@font-face {
+    font-family: karmafuture;
+    src: url('fonts/karmafuture.ttf'),
+         url('fonts/karmafuture.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-family: karmafuture;
+  text-align: center;
+  color: #808080;
+  font-size: 5vw;
+  margin-bottom: 8vw;
+  user-select: none;
+}
+
+#config {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vw;
+  width: 75%;
+}
+
+#buttons {
+  position: relative;
+  margin-bottom: 5vw;
+}
+
+#stats {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vw;
+  width: 75%;
+}
+
+ /* Make text, like the title, non-highlightable. */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
+}
+
+.gamebutton {
+  border: none;
+  border-radius: 8px;
+  width: 15vw;
+  height: 8vw;
+  margin: 1vw 1vw;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#red.gamebutton {background-color: #FF3300;}
+#green.gamebutton {background-color: #4CAF50;}
+#blue.gamebutton {background-color: #008CBA;}
+#yellow.gamebutton {background-color: #E6E600;}
+
+.modeButton {
+  float: right;
+}
+
+#statsBox {
+  margin: 0 0 0 20px;
+}

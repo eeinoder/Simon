@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1 id="title" class="noselect">Simon Game</h1>
+
+<!-- START & GAME M0DE BUTTONS, AND SCORE CARDS -->
+<div id="config">
+  <button id="start">Start</button>
+  <button class="modeButton" id="help">?</button>
+  <button class="modeButton" id="advanced">Advanced</button>
+  <button class="modeButton" id="classic">Classic</button>
+  <p id="hi-score">High Score:</p>
+  <span class="modeButton" id="mode">Game Mode:</span>
+  <p id="score">Score:</p>
+</div>
+
+
+<!-- GAME BUTTONS -->
+<div align="center" id="buttons">
+  <div id="row1">
+    <button class="noselect gamebutton" id="red" style="opacity:0.5" ></button>
+    <button class="gamebutton" id="green" style="opacity:0.5"></button>
+    <button class="gamebutton" id="blue" style="opacity:0.5"></button>
+    <button class="gamebutton" id="yellow" style="opacity:0.5"></button>
+  </div>
+  <div id="row2">
+  </div>
+  <div id="row3">
+  </div>
+</div>
+
+
+<!-- STATS BUTTON AND STATS BOXES -->
+<div id="stats">
+  <button class="settings" id="statsButton">Player Stats:</button>
+  <div id="statsBox" style="visibility:hidden">
+    <p class="settings">High Score (Classic):<span id="hiScoreCla" style="padding-left:30px"><span></p>
+    <p class="settings">High Score (Advanced):<span id="hiScoreAdv" style="padding-left:12px"><span></p>
+    <p class="settings">Games Played:<span id="numGames" style="padding-left:73px"><span></p>
+    <p class="settings">Buttons Clicked:<span id="numClicks" style="padding-left:62px"><span></p>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
+
+
+<!-- -->
